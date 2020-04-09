@@ -12,18 +12,20 @@ import { MaterialModule }           from './modules/material.module';
 // Imports for loading & configuring the in-memory web api
 
 import { AppComponent }             from './app.component';
+
 import { AboutComponent }           from './core/about/about.component';
 import { ContactComponent }         from './core/contact/contact.component';
 import { ConverterComponent }       from './core/projects/pig-latin-converter/converter.component';
-import { CvItemComponent }          from './cv-item/cv-item.component';
+import { CvItemComponent }          from './core/cv-item/cv-item.component';
 import { EducationComponent }       from './core/education/education.component';
 import { ExperienceComponent }      from './core/experience/experience.component';
 import { FooterComponent }          from './core/footer/footer.component';
 import { HeaderComponent }          from './core/header/header.component';
-import { LocalizationComponent }    from './helpers/l10n/l10n.component';
 import { OverviewComponent }        from './core/overview/overview.component';
-import { PictureModalComponent }    from './helpers/picture-modal/picture-modal.component';
 import { ProjectsComponent }        from './core/projects/projects.component';
+
+import { LocalizationComponent }    from './helpers/l10n/l10n.component';
+import { PictureModalComponent }    from './helpers/picture-modal/picture-modal.component';
 
 import { CvItemDirective }          from './directives/cv-item.directive';
 

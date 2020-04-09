@@ -109,6 +109,29 @@ export const CVITEMS: CvItem[] = [
     link: 'https://anatwine.com',
     thumbnail: 'companies/anatwine.png',
   },
+  {
+    title: 'London Translations',
+    subtitle: 'General Manager',
+    begin: '2013-10',
+    end: '2014-11',
+    link: 'https://londontranslations.co.uk',
+    thumbnail: 'companies/londontranslations.jpg',
+  },
+  {
+    title: 'AirSense Wireless',
+    subtitle: 'Head of QA, Delivery and Support, reporting to the CTO',
+    begin: '2012-03',
+    end: '2013-10',
+    thumbnail: 'companies/airsense.png',
+  },
+  {
+    title: 'Fintricity',
+    subtitle: 'Associate Consultant, reporting to the CEO',
+    begin: '2011-03',
+    end: '2012-02',
+    link: 'https://fintricity.com',
+    thumbnail: 'companies/fintricity.jpeg',
+  },
 ];
 
 export const CERTIFICATES: CvItem[] = [
