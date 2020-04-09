@@ -157,7 +157,7 @@ export const PROJECTS: CvItem[] = [
   {
     title: 'AngularCV -- extensions',
     subtitle: 'A simple self-hosted online-CV',
-    begin: '2020-',
+    begin: '2020',
     end: '',
     description: 'This project was initially created by Sebastian Schreck for the purpose of having a basic online-CV. ' +
       'After quite a few changes to some of the layouts, and modification to the overview page, this is the result.',
