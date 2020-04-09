@@ -1,0 +1,25 @@
+.overview-header-image {
+  background-image: url('../../../assets/img/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recommendation-card {
+  background-color: #F05F40;;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.recommendation-card-citation {
+  padding: 0 6px;
+}
+
+@media(max-width: 768px) {
+  .recommendation-card {
+    min-height: 210px;
+  }
+}

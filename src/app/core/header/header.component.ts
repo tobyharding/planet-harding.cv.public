@@ -1,0 +1,64 @@
+import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+
+import { LocalizationService } from '../../services/l10n.service';
+import { FeatureToggleService } from '../../services/feature-toggle.service';
+import { CvItemService } from '../../services/cv-item.service';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
+})
+export class HeaderComponent implements OnInit, AfterViewInit {
+  public l10n;
+  public featureToggles;
+  public generalData;
+  public navLinks = [];
+
+  public windowWidth: number = window.innerWidth;
+
+  // initial values, the window object may still be undefined during this hook
+  ngAfterViewInit() {
+    this.windowWidth = window.innerWidth;
+  }
+
+  // if screen size changes it'll update
+  @HostListener('window:resize', ['$event'])
+  resize(event) {
+    this.windowWidth = window.innerWidth;
+  }
+
+  constructor(
+    private localizationService: LocalizationService,
+    private featureToggleService: FeatureToggleService,
+    private cvItemService: CvItemService,
+  ) { }
+
+  private getLocalization(): void {
+    this.l10n = this.localizationService.getDefault();
+  }
+
+  private getFeatureToggles(): void {
+    this.featureToggles = this.featureToggleService.getFeatureToggles();
+  }
+
+  private getItems(): void {
+    this.generalData = this.cvItemService.getGeneralData();
+  }
+
+  private populateNavLinks(): void {
+    this.navLinks.push({   location: '/overview',       label: this.l10n.header.menu_overiew,          icon: 'account_circle' });
+    this.navLinks.push({   location: '/experience',     label: this.l10n.header.menu_experience,       icon: 'work' });
+    this.navLinks.push({   location: '/education',      label: this.l10n.header.menu_education,        icon: 'school' });
+    this.navLinks.push({   location: '/projects',       label: this.l10n.header.menu_projects,         icon: 'assignment' });
+    this.navLinks.push({   location: '/contact',        label: this.l10n.header.menu_contact,          icon: 'email' });
+  }
+
+  ngOnInit() {
+    this.getLocalization();
+    this.getFeatureToggles();
+    this.getItems();
+    this.populateNavLinks();
+  }
+
+}

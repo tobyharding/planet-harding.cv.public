@@ -1,0 +1,37 @@
+<mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>local_library</mat-icon>
+      Pig Latin Converter
+    </mat-card-title>
+  </mat-card>
+  
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="converterForm">
+            <div class="container">
+                <label for="plainText"><b>Plain text</b></label>
+                <input type="text" name="plainText" formControlName="plainText">
+        
+                <label for="encodedText"><b>Encoded text</b></label>
+                <input type="text" name="encodedText" formControlName="encodedText">
+        
+                <div class="buttons">
+                    <div class="button-more">
+                        <button (click)="onSubmit()"
+                            class="button-style"
+                            [disabled]="!converterForm.valid"
+                            type="button">Convert
+                        </button>
+                    </div>
+                    <div class="button-more">
+                        <button
+                            (click)="onClear()"
+                            class="button-style"
+                            type="button">Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </mat-card-content>
+</mat-card>

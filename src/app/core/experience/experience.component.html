@@ -1,0 +1,24 @@
+<mat-card class="page-title">
+  <mat-card-title>
+    <mat-icon>work</mat-icon>
+    {{l10n.experience.title}}
+  </mat-card-title>
+</mat-card>
+<app-cv-item *ngFor="let item of experienceItems" [cvItem]="item"></app-cv-item>
+
+<mat-card class="page-title">
+  <mat-card-title>
+    <mat-icon>check_circle_outline</mat-icon>
+    {{l10n.experience.skills}}
+  </mat-card-title>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <mat-chip-list selectable="false" *ngIf="skills !== undefined && skills !== [] && skills.length > 0">
+      <mat-chip *ngFor="let skill of skills">
+        {{skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>
