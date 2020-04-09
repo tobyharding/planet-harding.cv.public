@@ -28,9 +28,7 @@ export class ConverterComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.converterForm);
-
-    let textToConvert = this.converterForm.get('plainText').value.toLowerCase();
+    let textToConvert = this.converterForm.get('plainText').value.toLowerCase().trim();
 
     this.converterForm.patchValue({
       plainText: textToConvert,
