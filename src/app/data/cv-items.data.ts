@@ -135,7 +135,7 @@ export const EDUCATION: CvItem[] = [
   },
   {
     title: 'Pate\'s Grammar School, Cheltenham, United Kingdom',
-    subtitle: 'Bachelor of Science | Computer Science',
+    subtitle: '10 O-Levels, 3 A-Levels (Maths, Physics, Chemistry)',
     begin: '1981',
     end: '1998',
     description: '',
