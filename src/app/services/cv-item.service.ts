@@ -4,7 +4,21 @@ import { CvItem } from '../models/cv-item.model';
 import { Recommendation } from '../models/recommendation.model';
 
 // tslint:disable-next-line:max-line-length
-import { GENERAL, CVITEMS, RECOMMENDATIONS, CERTIFICATES, EDUCATION, PROJECTS, CONTACT, INTERESTS, SKILLS } from '../data/cv.data';
+import {
+  GENERAL,
+  CVITEMS,
+  RECOMMENDATIONS,
+  CERTIFICATES,
+  EDUCATION,
+  PROJECTS,
+  VOLUNTEERING,
+  LANGUAGES,
+  CONTACT,
+  PUBLICATIONS,
+  TALKS,
+  INTERESTS,
+  SKILLS
+} from '../data/cv.data';
 
 @Injectable()
 export class CvItemService {
@@ -35,8 +49,24 @@ export class CvItemService {
     return Promise.resolve(PROJECTS);
   }
 
+  getVolunteerItems(): Promise<CvItem[]> {
+    return Promise.resolve(VOLUNTEERING);
+  }
+
+  getLanguageItems() {
+    return Promise.resolve(LANGUAGES);
+  }
+
   getContactItems() {
     return Promise.resolve(CONTACT);
+  }
+
+  getPublicationItems(): Promise<CvItem[]> {
+    return Promise.resolve(PUBLICATIONS);
+  }
+
+  getTalkItems(): Promise<CvItem[]> {
+    return Promise.resolve(TALKS);
   }
 
   getInterestItems() {

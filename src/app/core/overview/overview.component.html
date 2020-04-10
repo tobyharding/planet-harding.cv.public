@@ -15,7 +15,7 @@
   </mat-card-header>
   <!-- <img mat-card-image src="assets/img/cover.jpg" alt=""> -->
   <mat-card-content *ngIf="generalData !== undefined && generalData.description !== undefined && generalData.description !== ''">
-    <p class="preformatted capitalize">{{generalData.description}}</p>
+    <p>{{generalData.description}}</p>
   </mat-card-content>
   <mat-card-content
     *ngFor="let overviewline of generalData.overview">

@@ -24,8 +24,8 @@ export const GENERAL = {
     'in the code helping his colleagues understand how business requirements should be fulfilled, and how to make ' +
     'improvements to project and business processes. ',
     'In his spare time, his inner-geek appears, and Toby is improving his functional programming with Java 8 and ' +
-    'learning Spring MVC and Spring JPA. He also created this webpage in Angular just because he had some spare time, ' +
-    'and was keen to learn. His CSS skills could be improved, and that\'s where Udemy comes in. ',
+    'learning Spring MVC and Spring JPA. He also created the initial version of this webpage in Angular just because he had some spare time, ' +
+    'and then extended it using the AngularCV project (see About section). His CSS skills could be improved, and that\'s where Udemy comes in. ',
     'Due to his love of great food, wine, and the occasional G&T, Toby is a keen cyclist, spending time pedalling ' +
     'around the hills of the Cotswolds. He\'s also a keen breadmaker, improving on his sourdough every time it\'s made, ' +
     'and as a proficient pianist he is helping his daughter learn the violin, although the accompaniments are getting ' +
@@ -207,6 +207,16 @@ export const EDUCATION: CvItem[] = [
   },
 ];
 
+export const LANGUAGES = [];
+// export const LANGUAGES = [
+//   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
+//   { title: 'English', level: '100' },
+//   { title: 'French | Français', level: '35' },
+//   { title: 'Italian | Italiano', level: '25' },
+//   { title: 'German | Deutsch', level: '25' },
+//   { title: 'Swedish | Svenska', level: '10' },
+// ];
+
 export const PROJECTS: CvItem[] = [
   {
     title: 'Pig Latin Converter',
@@ -251,6 +261,8 @@ export const PROJECTS: CvItem[] = [
   }
 ];
 
+export const VOLUNTEERING: CvItem[] = [];
+
 export const CONTACT = {
   city: 'Cheltenham, United Kingdom',
   phone: '',
@@ -269,6 +281,10 @@ export const CONTACT = {
   //   { title: 'GitLab Page', icon: 'icon-gitlab', link: 'https://stegschreck.gitlab.io' },
   // ],
 };
+
+export const PUBLICATIONS: CvItem[] = [];
+
+export const TALKS: CvItem[] = [];
 
 export const SKILLS = [
   'MS Project',

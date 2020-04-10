@@ -8,13 +8,17 @@ import { ExperienceComponent } from '../core/experience/experience.component';
 import { EducationComponent } from '../core/education/education.component';
 import { OverviewComponent } from '../core/overview/overview.component';
 import { ProjectsComponent } from '../core/projects/projects.component';
+import { PublicationsComponent } from '../core/publications/publications.component';
+import { VolunteeringComponent } from '../core/volunteering/volunteering.component';
 
 const routes: Routes = [
   { path: '',               redirectTo: '/overview', pathMatch: 'full' },
   { path: 'overview',       component: OverviewComponent },
   { path: 'experience',     component: ExperienceComponent },
   { path: 'education',      component: EducationComponent },
+  { path: 'publications',   component: PublicationsComponent },
   { path: 'projects',       component: ProjectsComponent },
+  { path: 'volunteering',   component: VolunteeringComponent },
   { path: 'contact',        component: ContactComponent },
   { path: 'about',          component: AboutComponent },
   { path: 'converter',      component: ConverterComponent },

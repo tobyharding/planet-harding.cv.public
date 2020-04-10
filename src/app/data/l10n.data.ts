@@ -24,6 +24,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'VIEW LINK',
       button_view_attachment: 'VIEW ATTACHED FILE',
+      button_view_image: 'VIEW IMAGE',
       now: 'now',
     },
     education: {
@@ -100,6 +101,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'LINK AUFRUFEN',
       button_view_attachment: 'ANHANG ANSEHEN',
+      button_view_image: 'BILD ANSEHEN',
       now: 'aktuell',
     },
     education: {
@@ -176,6 +178,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'APRI LINK',
       button_view_attachment: 'APRI FILE ALLEGATO',
+      button_view_image: 'GUARDA L\'IMMAGINE',
       now: 'adesso',
     },
     education: {
@@ -252,6 +255,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'VER ENLACE',
       button_view_attachment: 'VER FICHERO ADJUNTO',
+      button_view_image: 'VER IMAGEN',
       now: 'presente',
     },
     education: {
@@ -328,6 +332,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'VEURE ENLLAÇ',
       button_view_attachment: 'VEURE FITXER ADJUNT',
+      button_view_image: 'VEURE IMATGE',
       now: 'ara',
     },
     education: {
@@ -404,6 +409,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'VISA LINK',
       button_view_attachment: 'VISA FÖRTAGET FIL',
+      button_view_image: 'VISA BILD',
       now: 'nu',
     },
     education: {
@@ -478,6 +484,7 @@ export const L10N = {
     cv_item: {
       button_view_link: 'リンクを見る',
       button_view_attachment: '添付ファイルを表示',
+      button_view_image: '画像を見る',
       now: '今',
     },
     education: {
@@ -553,6 +560,7 @@ export const L10N = {
     cv_item: {
       button_view_link: '링크보기',
       button_view_attachment: '첨부 파일보기',
+      button_view_image: '이미지보기',
       now: '지금',
     },
     education: {
@@ -629,6 +637,7 @@ export const L10N = {
     cv_item: {
       button_view_link: '查看链接',
       button_view_attachment: '查看附件',
+      button_view_image: '看图',
       now: '现在',
     },
     education: {

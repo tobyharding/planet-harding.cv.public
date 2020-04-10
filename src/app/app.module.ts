@@ -33,6 +33,8 @@ import { CarouselService }          from './services/carousel.service';
 import { CvItemService }            from './services/cv-item.service';
 import { FeatureToggleService }     from './services/feature-toggle.service';
 import { LocalizationService }      from './services/l10n.service';
+import { PublicationsComponent } from './core/publications/publications.component';
+import { VolunteeringComponent } from './core/volunteering/volunteering.component';
 
 @NgModule({
   imports: [
@@ -59,6 +61,8 @@ import { LocalizationService }      from './services/l10n.service';
     PictureModalComponent,
     ProjectsComponent,
     CvItemDirective,
+    PublicationsComponent,
+    VolunteeringComponent,
   ],
   providers: [
     Title,
