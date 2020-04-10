@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { CvItem } from '../models/cv-item';
+import { CvItem } from '../models/cv-item.model';
+import { Recommendation } from '../models/recommendation.model';
 
 // tslint:disable-next-line:max-line-length
-import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, CONTACT, INTERESTS, SKILLS } from '../data/cv-items.data';
+import { GENERAL, CVITEMS, RECOMMENDATIONS, CERTIFICATES, EDUCATION, PROJECTS, CONTACT, INTERESTS, SKILLS } from '../data/cv.data';
 
 @Injectable()
 export class CvItemService {
@@ -16,6 +17,10 @@ export class CvItemService {
 
   getCvItems(): Promise<CvItem[]> {
     return Promise.resolve(CVITEMS);
+  }
+
+  getRecommendationItems(): Promise<Recommendation[]> {
+    return Promise.resolve(RECOMMENDATIONS);
   }
 
   getEducationItems(): Promise<CvItem[]> {

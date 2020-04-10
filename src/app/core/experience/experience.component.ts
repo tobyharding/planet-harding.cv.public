@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from '../../models/cv-item';
+import { CvItem } from '../../models/cv-item.model';
 
 import { LocalizationService } from '../../services/l10n.service';
 import { CvItemService } from '../../services/cv-item.service';
