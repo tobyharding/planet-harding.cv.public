@@ -45,6 +45,7 @@ export const GENERAL = {
 //   link?: string;
 //   thumbnail?: string;
 //   attachment?: string;
+//   image?: string;
 // }
 
 export const CVITEMS: CvItem[] = [
