@@ -53,10 +53,12 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Technical Consultant',
     begin: '2020-03',
     end: '',
-    description: 'Harding Leadership Consulting specialises in executive coaching and bespoke learning for organisations, leaders and teams, underpinned by psychology',
+    description: 'Harding Leadership Consulting specialises in executive coaching and bespoke learning for organisations, leaders and teams, underpinned by psychology. ' +
+    'It also has a less well-known technical consulting arm (Toby)',
     achievements: [
       'Lifestyle Retail Group / Secret Sales - integration consultant',
-      'Zoom training and onboarding for teams during Coronavirus pandemic 2020, including New Zealand schools, Henley Business School and British Swimming'
+      'Zoom training and onboarding for teams during Coronavirus pandemic 2020, including New Zealand schools, Henley Business School and British Swimming',
+      'Bespoke website development in Angular (mates\' rates can apply).'
     ],
     link: 'https://hardingconsulting.com',
     thumbnail: 'companies/hlc.png',
@@ -230,10 +232,12 @@ export const PROJECTS: CvItem[] = [
     subtitle: 'Designing, building and maintaining the new website for my wife\'s company, Harding Leadership Consulting',
     begin: '2019',
     end: '',
-    description: '',
-    tags: ['Angular', 'Bitbucket', 'CSS', 'AWS'],
+    description: 'Built in Angular with integrations in Firebase for messaging and recommendation self-service, with additional ' +
+    'integrations into the HLC Slack deployment for IM',
+    tags: ['Angular', 'Bitbucket', 'CSS', 'AWS', 'firebase', 'slack'],
     link: 'https://hardingconsulting.com',
     thumbnail: 'companies/hlc.png',
+    image: 'hlc-personalisation.jpeg',
   },
   {
     title: 'Sales Reporter',

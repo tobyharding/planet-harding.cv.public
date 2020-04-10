@@ -9,4 +9,5 @@ export class CvItem {
   link?: string;
   thumbnail?: string;
   attachment?: string;
+  image? :string;
 }

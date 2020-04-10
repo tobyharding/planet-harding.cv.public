@@ -1,4 +1,7 @@
 import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+
+import { PictureModalComponent } from '../../helpers/picture-modal/picture-modal.component';
 
 import { CvItemDirective } from '../../directives/cv-item.directive';
 
@@ -18,6 +21,7 @@ export class CvItemComponent implements OnInit, AfterViewInit {
   @ViewChild(CvItemDirective) public cvThumbnail: CvItemDirective;
 
   constructor(
+    private dialog: MatDialog,
     private localizationService: LocalizationService,
   ) { }
 
@@ -62,6 +66,14 @@ export class CvItemComponent implements OnInit, AfterViewInit {
       card.classList.add('opened');
       card.classList.remove('closed');
     }
+  }
+
+  private viewImage(imageName: string) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.data = {
+      imagePath: '../../assets/attachments/' + imageName
+    };
+    this.dialog.open(PictureModalComponent, dialogConfig);
   }
 
 }

@@ -54,5 +54,9 @@
       <mat-icon>attachment</mat-icon>
       {{l10n.cv_item.button_view_attachment}}
     </a>
+    <a mat-button color="primary" (click)="viewImage(cvItem.image)" *ngIf="cvItem.image">
+      <mat-icon>attachment</mat-icon>
+      View image
+    </a>
   </mat-card-actions>
 </mat-card>
