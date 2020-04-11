@@ -28,6 +28,7 @@ import { LocalizationComponent }    from './helpers/l10n/l10n.component';
 import { PictureModalComponent }    from './helpers/picture-modal/picture-modal.component';
 
 import { CvItemDirective }          from './directives/cv-item.directive';
+import { SetBGImageDirective }      from './directives/background-image.directive';
 
 import { CarouselService }          from './services/carousel.service';
 import { CvItemService }            from './services/cv-item.service';
@@ -60,9 +61,10 @@ import { VolunteeringComponent } from './core/volunteering/volunteering.componen
     OverviewComponent,
     PictureModalComponent,
     ProjectsComponent,
-    CvItemDirective,
     PublicationsComponent,
     VolunteeringComponent,
+    CvItemDirective,
+    SetBGImageDirective
   ],
   providers: [
     Title,

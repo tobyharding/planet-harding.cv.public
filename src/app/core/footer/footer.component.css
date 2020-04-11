@@ -14,9 +14,6 @@ mat-toolbar.footer {
   bottom: 0;
   padding-left: 24px;
   font-size: 1em;
-
-  /* add background for colour-blend with title */
-  background-image: url('/assets/background/header-footer-background.jpg');
 }
 
 @media screen and (max-width: 400px) {
