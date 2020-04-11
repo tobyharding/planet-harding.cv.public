@@ -28,7 +28,9 @@ export class OverviewComponent implements OnInit {
     private carouselService: CarouselService,
     private cvItemService: CvItemService,
     private dialog: MatDialog,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe(() => { this.getLocalization() });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();

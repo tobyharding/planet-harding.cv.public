@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 
+import { Subject, Subscription } from 'rxjs';
+
 import { FeatureToggleService } from './feature-toggle.service';
 import { L10N } from '../data/l10n.data';
 
 @Injectable()
 export class LocalizationService {
   private featureToggles;
+
+  languageChanged = new Subject();
 
   constructor(
     private featureToggleService: FeatureToggleService,
@@ -34,5 +38,9 @@ export class LocalizationService {
       language = JSON.parse(localStorage.getItem('l10n')).language;
     } catch (err) { }
     return L10N[language];
+  }
+
+  public changeLanguage():void {
+    this.languageChanged.next();
   }
 }

@@ -19,7 +19,9 @@ export class EducationComponent implements OnInit {
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe(() => { this.getLocalization() });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();

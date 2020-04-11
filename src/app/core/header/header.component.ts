@@ -32,7 +32,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe(() => { this.getAllItems(); }
+    )
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
@@ -47,6 +50,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   private populateNavLinks(): void {
+    this.navLinks.splice(0, this.navLinks.length);
+    
     this.navLinks.push({   location: '/overview',       label: this.l10n.header.menu_overiew,          icon: 'account_circle' });
     this.navLinks.push({   location: '/experience',     label: this.l10n.header.menu_experience,       icon: 'work' });
     this.navLinks.push({   location: '/education',      label: this.l10n.header.menu_education,        icon: 'school' });
@@ -62,11 +67,15 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.navLinks.push({   location: '/contact',        label: this.l10n.header.menu_contact,          icon: 'email' });
   }
 
-  ngOnInit() {
+  private getAllItems(): void {
     this.getLocalization();
     this.getFeatureToggles();
     this.getItems();
     this.populateNavLinks();
+  }
+
+  ngOnInit() {
+    this.getAllItems();
   }
 
 }

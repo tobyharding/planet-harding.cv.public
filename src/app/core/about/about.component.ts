@@ -12,7 +12,9 @@ export class AboutComponent implements OnInit {
 
   constructor(
     private localizationService: LocalizationService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe(() => { this.getLocalization() });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
