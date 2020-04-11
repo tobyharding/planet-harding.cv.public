@@ -14,8 +14,9 @@
   text-align: center;
 }
 
-.recommendation-card-citation {
-  padding: 0 6px;
+.recommendation-card-citation,
+.recommendation-card-giver {
+  margin: 0 12px;
 }
 
 @media(max-width: 768px) {
