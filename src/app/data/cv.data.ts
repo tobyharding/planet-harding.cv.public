@@ -122,8 +122,7 @@ export const CVITEMS: CvItem[] = [
       'Created full-stack sales reporter tool with web front-end and Java8 / SQL backend to give visibility of high-level sales figures to all ' +
       'staff on in-office monitors. Although not my core job, it demonstrated additional skills that I brought to the company from my time as a developer.'
     ],
-    tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
-      'Confluence', 'Jenkins', 'BitBucket', 'bash'],
+    tags: ['Java', 'SpringBoot', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo', 'Confluence', 'Jenkins', 'chef', 'BitBucket', 'bash'],
     link: 'https://anatwine.com',
     thumbnail: 'companies/anatwine.png',
   },

@@ -119,7 +119,6 @@ mat-card-title {
 
 mat-card.opened mat-card-content,
 mat-card.opened mat-card-actions {
-  max-height: 500px;
   position: static;
   visibility: visible;
   opacity: 1;
