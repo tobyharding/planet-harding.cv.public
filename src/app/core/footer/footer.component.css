@@ -14,6 +14,9 @@ mat-toolbar.footer {
   bottom: 0;
   padding-left: 24px;
   font-size: 1em;
+
+  /* add background for colour-blend with title */
+  background-image: url('/assets/backgrounds/header-background.jpg');
 }
 
 @media screen and (max-width: 400px) {
@@ -24,9 +27,9 @@ mat-toolbar.footer {
     font-size: 0.8em;
   }
 
-  span.copyright {
+  /* span.copyright {
     margin-top: -4px;
-  }
+  } */
 }
 
 mat-toolbar.footer a {

@@ -30,7 +30,7 @@ export const GENERAL = {
     'around the hills of the Cotswolds. He\'s also a keen breadmaker, improving on his sourdough every time it\'s made, ' +
     'and as a proficient pianist he is helping his daughter learn the violin, although the accompaniments are getting ' +
     'harder and harder!'
-  ]
+  ],
 };
 // tslint:enable:max-line-length
 

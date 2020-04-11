@@ -10,6 +10,9 @@ mat-toolbar.header {
   padding-left: 24px;
   font-size: 1em;
   z-index: 1000;
+
+  /* add background for colour-blend with title */
+  background-image: url('/assets/backgrounds/header-background.jpg');
 }
 
 @media screen and (max-width: 400px) {
