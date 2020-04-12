@@ -1,4 +1,3 @@
-/* tslint:disable:import-spacing */
 import { NgModule }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
 

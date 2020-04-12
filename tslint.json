@@ -16,7 +16,7 @@
     "import-blacklist": [
       true
     ],
-    "import-spacing": true,
+    "import-spacing": false,
     "indent": [
       true,
       "spaces"
