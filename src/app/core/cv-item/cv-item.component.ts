@@ -1,13 +1,13 @@
 import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig }                         from '@angular/material/dialog';
 
-import { PictureModalComponent } from '../../shared/helpers/picture-modal/picture-modal.component';
+import { PictureModalComponent }                              from '../../shared/helpers/picture-modal/picture-modal.component';
 
-import { CvItemDirective } from '../../shared/directives/cv-item.directive';
+import { CvItemDirective }                                    from '../../shared/directives/cv-item.directive';
 
-import { CvItem } from '../../shared/models/cv-item.model';
+import { CvItem }                                             from '../../shared/models/cv-item.model';
 
-import { LocalizationService } from '../../shared/services/l10n.service';
+import { LocalizationService }                                from '../../shared/services/l10n.service';
 
 @Component({
   selector: 'app-cv-item',

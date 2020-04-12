@@ -11,16 +11,16 @@ import { CoreModule }               from './core/core.module';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    CoreModule,
+    CoreModule
   ],
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   providers: [
-    Title,
+    Title
   ],
   bootstrap: [
-    AppComponent,
+    AppComponent
   ],
 })
 export class AppModule { }

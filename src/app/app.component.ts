@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component }      from '@angular/core';
+import { Title }          from '@angular/platform-browser';
 
-import { CvItemService } from './shared/services/cv-item.service';
+import { CvItemService }  from './shared/services/cv-item.service';
 
 @Component({
   selector: 'app-root',

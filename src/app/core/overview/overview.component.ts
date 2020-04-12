@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }          from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
-import { Subscription } from 'rxjs';
+import { Subscription }               from 'rxjs';
 
-import { Recommendation } from '../../shared/models/recommendation.model';
-import { CarouselService } from '../../shared/services/carousel.service';
+import { PictureModalComponent }      from '../../shared/helpers/picture-modal/picture-modal.component';
 
-import { LocalizationService } from '../../shared/services/l10n.service';
-import { CvItemService } from '../../shared/services/cv-item.service';
-import { PictureModalComponent } from '../../shared/helpers/picture-modal/picture-modal.component';
+import { Recommendation }             from '../../shared/models/recommendation.model';
+
+import { CarouselService }            from '../../shared/services/carousel.service';
+import { CvItemService }              from '../../shared/services/cv-item.service';
+import { LocalizationService }        from '../../shared/services/l10n.service';
 
 @Component({
   selector: 'app-overview',

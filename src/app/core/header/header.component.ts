@@ -1,8 +1,8 @@
 import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 
-import { LocalizationService } from '../../shared/services/l10n.service';
-import { FeatureToggleService } from '../../shared/services/feature-toggle.service';
-import { CvItemService } from '../../shared/services/cv-item.service';
+import { CvItemService }                                  from '../../shared/services/cv-item.service';
+import { FeatureToggleService }                           from '../../shared/services/feature-toggle.service';
+import { LocalizationService }                            from '../../shared/services/l10n.service';
 
 @Component({
   selector: 'app-header',

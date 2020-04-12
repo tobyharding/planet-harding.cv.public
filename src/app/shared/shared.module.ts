@@ -1,10 +1,10 @@
-import { NgModule }                 from "@angular/core";
+import { NgModule }                 from '@angular/core';
 import { CommonModule }             from '@angular/common';
 
 import { LocalizationComponent }    from './helpers/l10n/l10n.component';
 import { PictureModalComponent }    from './helpers/picture-modal/picture-modal.component';
 
-import { CvItemDirective }          from "./directives/cv-item.directive";
+import { CvItemDirective }          from './directives/cv-item.directive';
 import { SetBGImageDirective }      from './directives/background-image.directive';
 
 import { MaterialModule }           from './modules/material.module';

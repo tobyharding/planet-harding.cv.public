@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { FeatureToggleService } from '../../services/feature-toggle.service';
-import { LocalizationService } from '../../services/l10n.service';
+import { FeatureToggleService }     from '../../services/feature-toggle.service';
+import { LocalizationService }      from '../../services/l10n.service';
 
 @Component({
   selector: 'app-l10n',

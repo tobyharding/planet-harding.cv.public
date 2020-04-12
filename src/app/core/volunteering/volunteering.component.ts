@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }      from '@angular/core';
 
-import { CvItem } from '../../shared/models/cv-item.model';
+import { CvItem }                 from '../../shared/models/cv-item.model';
 
-import { CvItemService } from '../../shared/services/cv-item.service';
-import { LocalizationService } from '../../shared/services/l10n.service';
+import { CvItemService }          from '../../shared/services/cv-item.service';
+import { LocalizationService }    from '../../shared/services/l10n.service';
 
 @Component({
   selector: 'app-volunteering',

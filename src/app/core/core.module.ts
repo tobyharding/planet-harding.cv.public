@@ -31,7 +31,7 @@ import { SharedModule }             from '../shared/shared.module';
     OverviewComponent,
     ProjectsComponent,
     PublicationsComponent,
-    VolunteeringComponent,
+    VolunteeringComponent
   ],
   exports: [
       FooterComponent,

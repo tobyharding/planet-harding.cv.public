@@ -1,5 +1,5 @@
-import { Directive, ElementRef, OnInit, Renderer2 } from '@angular/core';
-import { CvItemService } from '../services/cv-item.service';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { CvItemService }                    from '../services/cv-item.service';
 
 @Directive({
   selector: '[setBackgroundImage]',
