@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AboutComponent } from '../core/about/about.component';
 import { ContactComponent } from '../core/contact/contact.component';
-import { ConverterComponent } from '../core/projects/pig-latin-converter/converter.component';
 import { ExperienceComponent } from '../core/experience/experience.component';
 import { EducationComponent } from '../core/education/education.component';
 import { OverviewComponent } from '../core/overview/overview.component';
@@ -20,8 +18,8 @@ const routes: Routes = [
   { path: 'projects',       component: ProjectsComponent },
   { path: 'volunteering',   component: VolunteeringComponent },
   { path: 'contact',        component: ContactComponent },
-  { path: 'about',          component: AboutComponent },
-  { path: 'converter',      component: ConverterComponent },
+  { path: 'about',          loadChildren: () => import('../core/about/about.module').then(m => m.AboutModule) },
+  { path: 'converter',      loadChildren: () => import('../core/projects/pig-latin-converter/converter.module').then(m => m.ConverterModule) },
   { path: '**',             redirectTo: 'overview' },
 ];
 

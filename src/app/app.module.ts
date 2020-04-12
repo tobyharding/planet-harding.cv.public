@@ -1,21 +1,15 @@
 /* tslint:disable:import-spacing */
 import { NgModule }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
-import { FormsModule }              from '@angular/forms';
-import { ReactiveFormsModule }      from '@angular/forms';
 import { HttpClientModule }         from '@angular/common/http';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 
 import { AppRoutingModule }         from './modules/app-routing.module';
 import { MaterialModule }           from './modules/material.module';
 
-// Imports for loading & configuring the in-memory web api
-
 import { AppComponent }             from './app.component';
 
-import { AboutComponent }           from './core/about/about.component';
 import { ContactComponent }         from './core/contact/contact.component';
-import { ConverterComponent }       from './core/projects/pig-latin-converter/converter.component';
 import { CvItemComponent }          from './core/cv-item/cv-item.component';
 import { EducationComponent }       from './core/education/education.component';
 import { ExperienceComponent }      from './core/experience/experience.component';
@@ -41,17 +35,13 @@ import { VolunteeringComponent } from './core/volunteering/volunteering.componen
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
   ],
   declarations: [
     AppComponent,
-    AboutComponent,
     ContactComponent,
-    ConverterComponent,
     CvItemComponent,
     EducationComponent,
     ExperienceComponent,
