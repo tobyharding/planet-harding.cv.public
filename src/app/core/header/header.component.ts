@@ -34,10 +34,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private cvItemService: CvItemService,
     ) {
       this.localizationService.languageChanged.subscribe(
-          (data) => {
-            this.l10n = data;
-            this.populateNavLinks();
-          });
+        (data) => {
+          this.l10n = data;
+          this.populateNavLinks();
+        });
     }
 
   private getLocalization(): void {
