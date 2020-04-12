@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Subject, Subscription } from 'rxjs';
+import { Subject } from 'rxjs';
 
 import { FeatureToggleService } from './feature-toggle.service';
 import { L10N } from '../data/l10n.data';
@@ -40,7 +40,7 @@ export class LocalizationService {
     return L10N[language];
   }
 
-  public changeLanguage():void {
-    this.languageChanged.next();
+  public changeLanguage(language):void {
+    this.languageChanged.next(L10N[language]);
   }
 }

@@ -43,7 +43,7 @@ export class LocalizationComponent implements OnInit {
     } catch (err) { }
     localStorage.setItem('l10n', JSON.stringify({ language: language }));
     if (current_language !== language) {
-      this.localizationService.changeLanguage();
+      this.localizationService.changeLanguage(language);
     }
   }
 }

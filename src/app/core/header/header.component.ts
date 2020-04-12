@@ -32,10 +32,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService,
-  ) {
-    this.localizationService.languageChanged.subscribe(() => { this.getAllItems(); }
-    )
-  }
+    ) {
+      this.localizationService.languageChanged.subscribe(
+          (data) => {
+            this.l10n = data;
+            this.populateNavLinks();
+          });
+    }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
@@ -67,15 +70,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.navLinks.push({   location: '/contact',        label: this.l10n.header.menu_contact,          icon: 'email' });
   }
 
-  private getAllItems(): void {
+  ngOnInit() {
     this.getLocalization();
     this.getFeatureToggles();
     this.getItems();
     this.populateNavLinks();
-  }
-
-  ngOnInit() {
-    this.getAllItems();
   }
 
 }

@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) {
-    this.localizationService.languageChanged.subscribe(() => { this.getLocalization() });
+    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data });
   }
 
   private getLocalization(): void {
