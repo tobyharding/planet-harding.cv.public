@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LocalizationService } from '../../services/l10n.service';
-import { FeatureToggleService } from '../../services/feature-toggle.service';
-import { CvItemService } from '../../services/cv-item.service';
+import { LocalizationService } from '../../shared/services/l10n.service';
+import { FeatureToggleService } from '../../shared/services/feature-toggle.service';
+import { CvItemService } from '../../shared/services/cv-item.service';
 
 @Component({
   selector: 'app-contact',

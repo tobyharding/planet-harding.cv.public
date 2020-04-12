@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { FEATURE_TOGGLES } from '../data/feature-toggles.data';
+import { FEATURE_TOGGLES } from '../../data/feature-toggles.data';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class FeatureToggleService {
 
   constructor() { }

@@ -3,12 +3,12 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { Subscription } from 'rxjs';
 
-import { Recommendation } from '../../models/recommendation.model';
-import { CarouselService } from '../../services/carousel.service';
+import { Recommendation } from '../../shared/models/recommendation.model';
+import { CarouselService } from '../../shared/services/carousel.service';
 
-import { LocalizationService } from '../../services/l10n.service';
-import { CvItemService } from '../../services/cv-item.service';
-import { PictureModalComponent } from '../../helpers/picture-modal/picture-modal.component';
+import { LocalizationService } from '../../shared/services/l10n.service';
+import { CvItemService } from '../../shared/services/cv-item.service';
+import { PictureModalComponent } from '../../shared/helpers/picture-modal/picture-modal.component';
 
 @Component({
   selector: 'app-overview',

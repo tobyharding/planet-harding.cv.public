@@ -3,9 +3,11 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 import { FeatureToggleService } from './feature-toggle.service';
-import { L10N } from '../data/l10n.data';
+import { L10N } from '../../data/l10n.data';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class LocalizationService {
   private featureToggles;
 

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from '../../models/cv-item.model';
+import { CvItem } from '../../shared/models/cv-item.model';
 
-import { LocalizationService } from '../../services/l10n.service';
-import { CvItemService } from '../../services/cv-item.service';
+import { LocalizationService } from '../../shared/services/l10n.service';
+import { CvItemService } from '../../shared/services/cv-item.service';
 
 @Component({
   selector: 'app-education',

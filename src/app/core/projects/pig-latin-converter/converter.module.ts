@@ -1,11 +1,11 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule }                 from '@angular/core';
+import { CommonModule }             from '@angular/common';
+import { ReactiveFormsModule }      from '@angular/forms';
 
-import { ConverterComponent } from "./converter.component";
+import { ConverterComponent }       from './converter.component';
 
-import { ConverterRoutingModule } from "./converter-routing.module";
-import { MaterialModule } from '../../../modules/material.module';
+import { ConverterRoutingModule }   from './converter-routing.module';
+import { SharedModule }             from '../../../shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -14,8 +14,8 @@ import { MaterialModule } from '../../../modules/material.module';
     imports: [
         CommonModule,
         ConverterRoutingModule,
-        MaterialModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        SharedModule
     ],
     entryComponents: [
     ]

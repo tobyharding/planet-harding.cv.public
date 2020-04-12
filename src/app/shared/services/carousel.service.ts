@@ -4,9 +4,11 @@ import { interval, Subject, Subscription } from 'rxjs';
 
 import { Recommendation } from '../models/recommendation.model';
 
-import { CvItemService } from '../services/cv-item.service';
+import { CvItemService } from './cv-item.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class CarouselService implements OnDestroy {
   public recommendations: Recommendation[];
 

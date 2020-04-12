@@ -1,5 +1,5 @@
-import { CvItem } from '../models/cv-item.model';
-import { Recommendation } from '../models/recommendation.model';
+import { CvItem } from '../shared/models/cv-item.model';
+import { Recommendation } from '../shared/models/recommendation.model';
 
 // tslint:disable:max-line-length
 export const GENERAL = {

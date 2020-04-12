@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LocalizationService } from '../../services/l10n.service';
+import { LocalizationService } from '../../shared/services/l10n.service';
 
 @Component({
   selector: 'app-about',

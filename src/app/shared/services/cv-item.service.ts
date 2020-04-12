@@ -18,9 +18,11 @@ import {
   TALKS,
   INTERESTS,
   SKILLS
-} from '../data/cv.data';
+} from '../../data/cv.data';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class CvItemService {
 
   constructor() { }
