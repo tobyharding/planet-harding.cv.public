@@ -13,10 +13,12 @@ import { ProjectsComponent }        from './projects/projects.component';
 import { PublicationsComponent }    from './publications/publications.component';
 import { VolunteeringComponent }    from './volunteering/volunteering.component';
 
+import { AppRoutingModule }         from '../shared/modules/app-routing.module';
 import { SharedModule }             from '../shared/shared.module';
 
 @NgModule({
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule
@@ -34,8 +36,9 @@ import { SharedModule }             from '../shared/shared.module';
     VolunteeringComponent
   ],
   exports: [
-      FooterComponent,
-      HeaderComponent
+    AppRoutingModule,
+    FooterComponent,
+    HeaderComponent
   ]
 })
 export class CoreModule { }
